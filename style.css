@@ -1,261 +1,292 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
+    /* for reset all elements in html  */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-nav a {
-    color: black;
-    text-decoration: none;
-    word-spacing: 0;
+
+body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    color: black;
+    line-height: 1.2;
 }
-ol {
-    transform: translateY(-112px);
-}
-nav {
+
+.u-center-element {
+    display: block;
     text-align: center;
-    margin-top: 20px;
-    word-spacing: 20px;
-    padding-top: 20px;
 }
-nav a:hover {
-    color: rgb(0, 132, 255);
-}
-h2 {
-    padding: 30px 0 0 40px;
+.small-heading {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    letter-spacing: 6px;
-    word-spacing: 0;
+    letter-spacing: 5px;
 }
-li {
-    text-align: right;
-    list-style-type: none;
-    margin-right: 100px;
-    transform: translateY(-35px);
+.btn {
+    cursor: pointer;
 }
-li a {
+a{
+    display: inline-block;
     text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+
+}
+/* sat khassak darouri tmxiiii fi styling bi tari9a mnadma matb9aax tkharb9 fi tartiib diyal stytling elements */
+nav{
+    background-color: white;
+}
+/* clear fix problem hack */
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav .logo {
+    padding: 40px 40px 30px;
+    float: left;
+}
+.logo span {
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 900;
+}
+nav .navigator-list{
+    margin-top: 40px;
+    margin-left: 10%;
+    float: left;
+}
+.navigator-list li {
+    display: inline;
+}
+nav a {
+    transition: all .25s ease-out;
+}
+li a{
+    /*anchors is automatically display :inline;*/
+    /* inheritance for creating a dynamic styling if change the body properties the anchors color and font-size will changed automatically */
+    font-size: inherit;
+    color: inherit;
+    /* by default word-spacing:0; */
+    /* word-spacing: 0; */
+    padding: 5px 15px;
+}
+li a:hover {
     color: rgb(0, 132, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header {
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+.btn-login {
+    float: left;
+    margin-top: 45px;
+    margin-left: 150px;
+}
+
+.btn-login a {
+    font-size: 16px;
+    color: rgb(0, 132, 255);
+}
+.btn-login a:hover{
+    color: rgb(0, 132, 255);
+    border-bottom:2px solid rgb(0, 132, 255);
+    padding-bottom: 5px;
+}
+
+.header-title{
+    position: relative;
+    /* mlii kan3tiiw li parent text align center auto children ghadii yakhdouha ka inheritance wirata */
+    text-align: center;
+    padding: 100px 0;
     background-image: url("image/mountain.gif");
-    height: 550px;
     background-size: cover;
-    transform: translateY(-100px);
+    letter-spacing: 5px;
+    /* bro oussama had letter spacing kat9ball inheritance donc bla man3awdouhhha koula mara */
 }
-h3 {
-  text-align: center;
-  padding-top: 100px;
+.header-title span {
+    display: block;
+}
+.top-sub-title{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  letter-spacing: 5px;
-  word-spacing: 0;
 }
-h1 {
-    text-align: center;
+h1.main-title{
+    padding: 50px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 150px;
-    transform: translateY(-60px);
-    letter-spacing: 5px;
-    word-spacing: 0;
 }
-h4 {
-    text-align: center;
-    transform: translateY(-140px);
-    letter-spacing: 5px;
-    word-spacing: 0;
+.bottom-sub-title{
     font-family: 'Montserrat', sans-serif;
 }
-button[type='submit'] {
-    margin-left: 600px;
-    transform: translateY(-80px);
-    padding: 15px 20px 15px 20px;
+.btn-title ,
+.btn-primary{
+    margin-top: 50px;
+    padding: 15px 20px;
     background-color: black;
     color: white;
-    transition: 0.4s;
+    transition: 0.4s all ease-in;
     font-family: 'Roboto', sans-serif;
     border: 1px solid black;
     outline: none;
 }
-button[type='submit']:hover {
+.btn-title:hover ,
+.btn-primary:hover{
     background-color: rgba(0, 0, 0, 0);
     color: black;
 } 
-h5 {
-    margin-left: 100px;
-    transform: translateY(-100px);
-    font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-}
-.container article {
+
+.section-about {
     font-family: 'Montserrat', sans-serif;
-    word-wrap: break-word;
-    margin-right: 800px;
-    transform: translateY(-100px);
-    margin-left: 90px;
-    font-size: 17px;
+    max-width:1140px;
+    margin: 75px auto;
 }
-aside {
-    position: relative;
-    bottom: 580px;
-    right: 70px;
-    text-align: right;
+
+.about-content{
+    float: left;
+    width: calc(50% - 150px);
+    margin-right:150px ;
+    font-size: 18px;
 }
-.read {
-   transform: translateY(-650px);
-   margin-left: 100px;
-   padding: 15px 20px 15px 20px;
-   background-color: black;
-   color: white;
-   transition: 0.4s;
-   font-family: 'Roboto', sans-serif;
-   border: 1px solid black;
-   outline: none;
+.about-content .main-heading {
+    margin-top: 50px;
 }
-.read:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
+
+.about-content .paragraphs {
+    margin: 100px 0 75px;
+    padding: 0 25px;
 }
-.footer {
+.paragraphs p:not(:last-of-type){
+    margin-bottom: 50px;
+}
+.about-image {
+    float: left;
+    width: 50%;
+}
+.about-image img {
+    width: 100%;
+}
+
+.plans {
     background-image: url('image/mo.jpg');
     background-size: cover;
-    transform: translateY(-700px);
-    height: 790px;
+    background-position:center ;
+    padding: 50px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
-.footer h5 {
-    transform: translateY(40px);
+.plans-title{
+    padding-left:100px ;
 }
-.h5 {
-    transform: translateY(-120px);
+.plans-row {
+    max-width: 1155px;
+    margin: 0 auto;
+    padding: 50px;
 }
 .row::after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
-.row {
-    position: relative;
-    left: 140px;
-}
-.column {
+.plan-column {
+    width: calc(33.333% - 20px);
     float: left;
-    width: 33.33%;
-    padding: 15px;
-    margin: 0 10px 0 10px;
-    transform: translateY(-150px);
     border: 10px solid black;
+    padding: 15px;
 }
-.column {
-    width: 25%;
+.plan-column:not(:last-of-type) {
+    margin-right:10px;
 }
-h6 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 5px;
-}
-.column p {
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 5px;
-    transform: translateY(-20px);
-}
-.p {
-    transform: translateY(-50px);
-    border-bottom: 3px solid black;
-}
-.p1 {
-    border-bottom: 3px solid black;
-}
-.h6 {
-    transform: translateY(-40px);
-}
-hr {
-    transform: translateY(-50px);
-}
-.p3 {
+.plan-column .small-heading{
     text-align: center;
 }
-.book {
-    margin-left: 90px;
-    padding: 10px 35px 10px 35px;
+.line-plans {
     border: none;
-    font-family: 'Montserrat', sans-serif;
-    outline: none;
-    background-color: rgb(51, 143, 230);
+    border-bottom: 3px solid black;
+    margin: 50px 0;
 }
-.k {
-    margin-left: 90px;
-    font-family: 'Montserrat', sans-serif;
-    transform: translateY(16px);
-    margin-bottom: 13px;
-    padding: 10px 35px 10px 35px;
-    border: none;
-    outline: none;
-    background-color: rgb(51, 143, 230);
+.plan-title {
+    padding: 25px 0;
 }
-.book:hover {
-    background-color: rgba(51, 144, 230, 0.726);
+.plan-pricing span{
+    display: inline-block;
+    margin: 15px 0;
 }
-.k:hover {
-    background-color: rgba(51, 144, 230, 0.726);
-}
-.ser {
-    margin-left: 600px;
-    transform: translateY(-110px);
-    padding: 10px 40px 10px 40px;
-    background-color: black;
-    color: white;
-    transition: 0.4s;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    outline: none;
-}
-.ser:hover {
-    background-color: rgba(0, 0, 0, 0);
+.btn-plan {
+    margin-top: 25px;
     color: black;
-}
-.bottom {
-    background-color: rgb(3, 143, 185);
-    height: 700px;
-    transform: translateY(-720px);
-    text-align: right;
-    padding-right: 250px;
-}
-input {
-    padding: 10px 250px 10px 8px;
-    transform: translateX(100px);
-    background-color: rgba(255, 255, 255, 0);
-    border: 1.5px solid black;
+    padding: 10px 35px;
+    font-family: 'Montserrat', sans-serif;
     outline: none;
+    background-color: rgb(51, 143, 230);
+    transition: all .25s ease-in;
 }
-.bottom p {
-    transform: translateX(-170px);
+.btn-plan:hover {
+    background-color: rgba(51, 144, 230, 0.726);
+}
+footer{
+    background-color:rgb(3, 143, 185);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
-input:hover {
-    background-color: rgba(0, 0, 0, 0.39);
+.footer-container {
+    padding: 50px 0 0;
+    max-width:1150px ;
+    margin: 0 auto;
 }
-input:focus {
-    background-color: rgba(24, 236, 225, 0.712);
+.footer-container > div {
+    float: left;
+    width: 50%;
 }
-::placeholder {
-    font-family: 'Montserrat', sans-serif;
+.footer-container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+footer .infos > div:not(:last-of-type){
+    margin-bottom: 50px;
+}
+.infos p {
+    line-height: 1.7;
+}
+.social img {
+    transition: opacity .25s ease-in;
+}
+.social img:hover {
+    opacity: .7;
+}
+footer .inputs-contact> div:not(:last-of-type){
+    margin-bottom: 35px;
+}
+.inputs-contact label {
+    display: block;
+    padding-bottom:10px;
+}
+footer input ,textarea{
+    font-family: inherit;
+    background-color: transparent;
+    border: 2px solid black;
+    width: 400px;
+    padding: 5px 10px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+footer input::placeholder ,textarea::placeholder{
     color: black;
+} 
+footer .footer-copyright{
+    cursor: pointer;
+    padding: 50px 0 15px;
+    transition: color .25s ease-out;
 }
-input[type='text'] {
-    padding-bottom: 100px;
-}
-.last p{
-    text-align: left;
-    padding-left: 100px;
-    transform: translateY(-450px);
-}
-.social img{
-    transform: translateY(-480px);
-    position: relative;
-    right: 860px;
+footer .footer-copyright:hover{
+    color: white;
 }

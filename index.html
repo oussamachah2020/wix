@@ -4,102 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Coaching Professional</title>
+    <title>Document</title>
 </head>
 <body>
-        <h2>ALLAH JOHNSON</h2>
-        <li><a href="#">log in</a></li>
-       <nav>
-           <ol>
-               <a href="#">Home</a>
-               <a href="#">About</a>
-               <a href="#">Services</a>
-               <a href="#">Motivational Reading</a>
-               <a href="#">Blog</a>
-               <a href="#">Contact</a>
-           </ol>
-       </nav>
-       <div class="header">
-          <h3>AMBITION IS THE FIRST STEP TOWARDS</h3>
-          <h1>SUCCESS</h1>
-          <h4>Now Avaible for Online Coaching</h4>
-          <button type="submit">BOOK NOW</button>
-       </div>
-       <div class="container">
-          <h5>About me</h5>
-           <article>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</article><br><br>
-           <article>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</article>
-           <aside>
-               <img src="image/allancolor-11c.jpg" alt="">
-           </aside>
-           <button class="read">Read More</button>
-       </div>
-       <div class="footer">
-        <h5>How I Can</h5>
-        <div class="h5">
-            <h5>Help You</h5>
-        </div>
-        <div class="row">
-            <div class="column">
-                <h6>ONLINE</h6>
-               <div class="h6"><h6>COACHING</h6></div>
-                <div class="p">
-                    <p>I'm a tagline. Click to add your own text and edit me.</p>
-                </div>
-                <div class="p3">
-                    <p>1h</p>
-                    <p>$70</p>
-                </div>
-                <button class="book">Book it</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>ALLAH JOHNSON</span>
             </div>
-            <div class="column">
-                <h6>COUPLE'S</h6>
-                <div class="h6"><h6>GUIDANCE</h6></div>
-                <div class="p">
-                    <p>I'm a tagline.Click here to add your own text and edit me.</p>
-                </div>
-                <div class="p3">
-                    <p>1h 30min</p>
-                    <p>$120</p>
-                </div>
-                <button class="book">Book it</button>
+            <div class="navigator-list">
+                <!-- dima wsat order list or unorder list khass ykoun li element tag bax yb9a seo tala3 diyal le site or diyal design  -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Motivational Reading</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
-            <div class="column">
-                <h6>SELF-IMPROVEMENT WORKSHIP</h6>
-                    <div class="p1">
-                        <p>I'm a tagline.Click here to add your own text and edit me.</p>
-                    </div><br><br>
-                    <div class="p3">
-                        <p>$90</p>
-                    </div><br><br>
-                    <button class="k">Book it</button>
+            <div class="btn btn-login">
+                <a href="#">log in</a>
+            </div>
+        </nav>        
+        <div class="header-title">
+            <span class="top-sub-title">AMBITION IS THE FIRST STEP TOWARDS</span>
+            <h1 class="main-title">SUCCESS</h1>
+            <span class="bottom-sub-title">Now Avaible for Online Coaching</span>
+            <a class="btn btn-title btn-primary" href="#">BOOK NOW</a>
+        </div>
+    </header>
+    <main>
+        <section class="section-about row">
+            <aside class="about-content">
+                <div class="main-heading">About me</div>
+                <div class="paragraphs">
+                    <p class="p-1">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+                    </p>
+
+                    <p class="p-2">
+                        This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+                    </p>
+                </div>
+                    <a class="btn btn-primary">Read More</a>
+            </aside>
+                <aside class="about-image">
+                    <img src="image/allancolor-11c.jpg" alt="">
+                </aside>
+        </section>
+        <section class="plans">
+            <div class="plans-title">
+                <div class="main-heading">How I Can
+                    <div class="main-heading">Help You</div>
+                </div>
+            </div>
+            <div class="plans-row">
+                <div class="row">
+                    <div class="plan-column plan-1">
+                        <div class="plan-title">
+                            <div class='small-heading'>ONLINE
+                                <div class='small-heading'>COACHING</div>
+                            </div>
+                        </div>
+                        <div class="plan-info">
+                            <p>I'm a tagline. Click to add your own text and edit me.</p>
+                        </div>
+                        <hr class="line-plans">
+
+                        <div class="plan-pricing">
+                            <div class="u-center-element">
+                                <span>1h</span>
+                            </div>
+                            <div class="u-center-element">
+                                <span>$70</span>
+                            </div>
+                        </div>
+                        <div class="u-center-element">
+                            <a class="btn btn-plan" href="#">Book it</a>
+                        </div>
+                    </div>
+                    <div class="plan-column plan-2">
+                        <div class="plan-title">
+                            <div class='small-heading'>COUPLE'S
+                                <div class='small-heading'>GUIDANCE</div>
+                            </div>
+                        </div>
+                        <div class="plan-info">
+                            <p>I'm a tagline. Click to add your own text and edit me.</p>
+                        </div>
+                        <hr class="line-plans">
+
+                        <div class="plan-pricing">
+                            <div class="u-center-element">
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="u-center-element">
+                                <span>$120</span>
+                            </div>
+                        </div>
+                        <div class="u-center-element">
+                            <a class="btn btn-plan" href="#">Book it</a>
+                        </div>
+                    </div>
+    
+                    <div class="plan-column plan-2">
+                        <div class="plan-title">
+                            <div class='small-heading'>SELF-IMPROVEMENT WORKSHIP</div>
+                        </div>
+                        <div class="plan-info">
+                            <p>I'm a tagline. Click to add your own text and edit me.</p>
+                        </div>
+                        <hr class="line-plans">
+                        <div class="plan-pricing">
+                            <div class="u-center-element">
+                                <span>2h 30min</span>
+                            </div>
+                            <div class="u-center-element">
+                                <span>$90</span>
+                            </div>
+                        </div>
+                        <div class="u-center-element">
+                            <a class="btn btn-plan" href="#">Book it</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-element">
+                <a class="btn btn-primary">more services</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="infos">
+                <div class="local-location">
+                    <p>500 Terry Francois Street</p>
+                    <p>San Francisco, CA 94158</p>
+                </div>
+              <div class="phone-details">
+                <p>Tel: 123-456-7890</p>
+                <p>Fax: 123-456-7890</p>
+              </div>
+              <div class="web-site">
+                <p>info@mysite.com</p>
+              </div>
+              <div class="social">
+                  <a href="#"><img src="image/facebook.png" alt="facebook-logo"></a>
+                  <a href="#"><img src="image/twitter.png" alt="twitter-logo"></a>
+                  <a href="#"><img src="image/insta.png" alt="inta-logo"></a>
+                  <a href="#"><img src="image/youtube.png" alt="youtube-logo"></a>
+              </div>
+            </div>
+            <div class="inputs-contact">
+                <div class="name">
+                    <label>Enter Your Name</label>
+                    <input type="email" placeholder="Your Name">
+                </div>
+                <div class="email">
+                    <label>Enter Your E-mail</label>
+                    <input type="email" placeholder="Your email">
+                </div>
+                <div class="sybject">
+                    <label>Enter your subject</label>
+                    <input type="email" placeholder="Subject">
+                </div>
+                <div class="message">
+                    <label>Enter  Message</label>
+                    <textarea placeholder="Message"></textarea>
+                </div>
             </div>
         </div>
-        <button class="ser">More Services</button>
-       </div>
-       <div class="bottom">
-          <p>Enter Your Name</p>
-          <input type="email" placeholder="Your Name">
-          <p>Enter Your E-mail</p>
-          <input type="email" placeholder="Your email">
-          <p>Enter your subject</p>
-          <input type="email" placeholder="Subject">
-          <p>Enter  Message</p>
-          <input type="text" placeholder="Message">
-          <div class="last">
-            <p>500 Terry Francois Street</p>
-            <p>San Francisco, CA 94158</p><br><br><br>
-            <p>Tel: 123-456-7890</p>
-            <p>Fax: 123-456-7890</p><br><br>
-            <p>info@mysite.com</p><br><br>
-            <div class="social">
-                <a href="#"><img src="image/facebook.png"></a>
-                <a href="#"><img src="image/twitter.png" alt=""></a>
-                <a href="#"><img src="image/insta.png" alt=""></a>
-                <a href="#"><img src="image/youtube.png" alt=""></a>
-            </div><br><br><br><br>
-            <p>&copy; 2023 by Personal life Coach.</p>
-        </div>
-       </div>
+        <div class="u-center-element">
+            <a href="#"><p class="footer-copyright">&copy; 2020 by Personal life Coach.</p></a>
+          </div>
+    </footer>
 </body>
 </html>
